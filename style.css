@@ -1,0 +1,445 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 2rem 4%;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0.5em 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.image {
+  position: relative;
+  background: url(./images/Rectangle\ 1.png);
+}
+
+.image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  z-index: 1;
+}
+
+.image .header,
+.image .hero {
+  position: relative;
+  z-index: 2;
+}
+
+/* Header */
+.header {
+    /* background: url(./images/Rectangle\ 1.png); */
+    /* position: fixed; */
+    top: 0;
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    /* align-content: center; */
+    /* justify-content: center; */
+    font-size: 1.5rem;
+    color: #ff0000;
+}
+
+.header .logo img {
+    height: 50px;
+    margin-left: 35px;
+}
+
+.header .nav {
+    display: flex;
+}
+
+.header .nav ul {
+    margin-left: 20rem;
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}
+
+.header .nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+.btn {
+    /* font-size: larger; */
+    /* gap: 4rem; */
+    margin-left: 4rem;
+}
+
+.header .login-btn,
+.subscribe-btn {
+    font-size: large;
+    background: transparent;
+    color: #fff;
+    margin: 6px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.login-btn{
+    backdrop-filter: blur(10px);
+}
+
+.subscribe-btn {
+    border: solid 1px #f4f4f4;
+}
+
+/* Hero Section */
+.hero {
+    /* text-align: center; */
+    /* background: #f4f4f4; */
+    padding: 50px 0;
+}
+
+.hero h1 {
+    color: #ff0000;
+}
+
+.hero p {
+    color: #ff0000;
+}
+
+.media-player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.play-btn {
+    font-size: 2rem;
+    background: #ff0000;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #ff0000;
+    font-size: 1.5rem;
+}
+
+/* Popular & Trending Section */
+.popular-trending {
+    padding: 50px 0;
+}
+
+.popular-trending h2 {
+    text-align: center;
+    color: #ff0000;
+}
+
+.podcast-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.podcast-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.podcast-card h3 {
+    margin: 10px 0;
+}
+
+.podcast-card .play-btn {
+    background: #ff0000;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* Podcast Grid Section */
+.podcast-grid {
+    padding: 50px 0;
+}
+
+.podcast-grid h2 {
+    text-align: center;
+    color: #ff0000;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    background: #ff0000;
+    color: #fff;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.grid .podcast-card {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+/* Features Section */
+.features {
+    background: #f4f4f4;
+    padding: 50px 0;
+}
+
+.features h2 {
+    text-align: center;
+    color: #ff0000;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature img {
+    width: 50px;
+    height: 50px;
+}
+
+.feature h3 {
+    margin: 10px 0;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 0;
+}
+
+.testimonials h2 {
+    text-align: center;
+    color: #ff0000;
+}
+
+.testimonial-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.testimonial-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 300px;
+}
+
+.testimonial-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Pricing Section */
+.pricing {
+    background: #f4f4f4;
+    padding: 50px 0;
+}
+
+.pricing h2 {
+    text-align: center;
+    color: #ff0000;
+}
+
+.pricing-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.pricing-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+
+/* Newsletter Section */
+.newsletter {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.newsletter h2 {
+    color: #ff0000;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    background: #ff0000;
+    color: #fff;
+}
+
+/* Footer Section */
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer .cta {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer .cta button {
+    background: #ff0000;
+    color: #fff;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer .social-icons a {
+    color: #ff0000;
+    font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid .podcast-card {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .features-grid,
+    .pricing-cards,
+    .footer-columns {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid .podcast-card {
+        flex: 1 1 100%;
+    }
+
+    .header .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header .nav ul li {
+        text-align: center;
+    }
+}
