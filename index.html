@@ -1,220 +1,514 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Podcast</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="images/png" href="./images/Layer_1.png" />
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+  </head>
+  <body>
+    <!-- header section starts here  -->
+    <section class="header" id="header">
+      <div class="header-logo">
+        <img src="./images/Frame 1.png" alt="" />
+      </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Podcast Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+      <nav class="navbar-items" id="navbar-items">
+        <a href="#">Episode</a>
+        <a href="#">Review</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </nav>
 
-<body>
-    <!-- Header Section -->
-    <div class="image">
-        <header class="header">
-            <div class="container">
-                <div class="logo">
-                    <img src="./images/Layer_1.png" alt="">
-                    <h1 class="logo">Podcast</h1>
-                </div>
-                <nav class="nav">
-                    <ul>
-                        <li><a href="#">Episode</a></li>
-                        <li><a href="#">Review</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                    <div class="btn">
-                        <button class="login-btn" id="btn">Login</button>
-                        <button class="subscribe-btn" id="btn">Subscribe</button>
-                    </div>
-                </nav>
-            </div>
-        </header>
+      <div class="nav-cta">
+        <a href="#" class="login">Login</a>
+        <a href="#" class="subscribe">Subscribe</a>
+      </div>
+    </section>
+    <!-- header section ends here  -->
 
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <h1>We Talk, You Listen</h1>
-                <p>The most interactive show on the internet</p>
-                <div class="media-player">
-                    <button class="play-btn">▶</button>
-                    <div class="progress-bar"></div>
-                    <div class="volume-control"></div>
-                </div>
-                <div class="social-icons">
-                    <a href="#">Facebook</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">Instagram</a>
-                </div>
-            </div>
-        </section>
-    </div>
+    <!-- hero section starts from here  -->
+    <section class="hero" id="hero">
+      <div class="hero-top">
+        <h1>we talk, you listen</h1>
+        <p>The most interactive show on the internet</p>
+      </div>
 
-    <!-- Popular & Trending Section -->
-    <section class="popular-trending">
-        <div class="container">
-            <h2>Popular & Trending</h2>
-            <div class="podcast-card">
-                <img src="thumbnail.jpg" alt="Podcast Thumbnail">
-                <h3>Podcast Title</h3>
-                <p>Date</p>
-                <button class="play-btn">Play</button>
-                <p>Brief description of the podcast...</p>
-            </div>
+      <div class="music">
+        <p>Start Listening</p>
+        <div id="wavefrom"></div>
+        <img src="./images/Group 13.png" alt="" id="playBtn" />
+      </div>
+
+      <div class="listeners">
+        <img src="./images/Ellipse 2.png" alt="" class="image1" />
+        <img src="./images/Ellipse 3.png" alt="" class="image2" />
+        <img src="./images/Ellipse 4.png" alt="" class="image3" />
+        <div class="image4"><p>100k+</p></div>
+        <p class="world">Worldwide listeners</p>
+      </div>
+    </section>
+    <!-- hero section ends here  -->
+
+    <!-- card1 starts here  -->
+
+    <section class="card" id="card">
+      <div class="card-left">
+        <img src="./images/Rectangle 4.png" alt="" />
+        <!-- <div class="card-picture"> -->
+        <img src="./Assets/Rectangle 4.png" alt="" />
+        <div class="details">
+          <p>Enam Baity</p>
+          <h3>The design principles</h3>
+          <p>Episode 1 . Season 2</p>
+          <span>05:56</span>
         </div>
+        <!-- </div> -->
+        <img src="./Assets/Group 4.png" alt="" />
+      </div>
+
+      <div class="card-right">
+        <div class="top">
+          <div class="top1">
+            <img src="./Assets/shuffle.png" alt="" />
+            <img src="./Assets/back.png" alt="" />
+            <img src="./Assets/pause.png" alt="" />
+            <img src="./Assets/forward.png" alt="" />
+            <img src="./Assets/repeat.png" alt="" />
+          </div>
+
+          <div class="top2">
+            <img src="./Assets/Volume icon.png" alt="" />
+          </div>
+        </div>
+
+        <div class="bottom">
+          <img src="./Assets/Music load bar1.png" alt="" />
+        </div>
+      </div>
     </section>
 
-    <!-- Podcast Grid Section -->
-    <section class="podcast-grid">
-        <div class="container">
-            <h2>Explore More Podcasts</h2>
-            <div class="filter-buttons">
-                <button>All</button>
-                <button>Technology</button>
-                <button>Business</button>
-                <button>Entertainment</button>
-            </div>
-            <div class="grid">
-                <!-- Repeat this block for each podcast card -->
-                <div class="podcast-card">
-                    <img src="thumbnail.jpg" alt="Podcast Thumbnail">
-                    <h3>Podcast Title</h3>
-                    <p>Duration</p>
-                    <button class="play-btn">Play</button>
-                </div>
-            </div>
+    <!-- card1 ends here  -->
+
+    <!-- trending starts from here  -->
+
+    <section class="trending" id="trending">
+      <div class="trending-top">
+        <h1>Popular & Trending</h1>
+        <p>See All Trending Podcast</p>
+      </div>
+
+      <div class="trending-details">
+        <div class="trending-left">
+          <img src="./Assets/Rectangle 8.png" alt="" />
+          <img src="./Assets/Rectangle 9.png" alt="" class="t-image2" />
         </div>
+
+        <div class="trending-right">
+          <h4 class="title">JONATHAN EDEM</h4>
+          <h3>
+            Among Podcasts With A Similar Concept Or Genre, What Topics Do They
+            Discuss?
+          </h3>
+          <div class="middle">
+            <h5>Podcast</h5>
+            <h6>December 10</h6>
+          </div>
+          <p class="lorem">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit nulla
+            dignissim justo, mi etiam fames fermentum elementum natoque blandit
+            risus. Ligula ultricies suscipit justo vitae turpis lacus
+          </p>
+          <div class="down">
+            <img src="./Assets/pauseR.png" alt="" />
+            <div class="down-middle">
+              <h2>Episode 1. Season 2</h2>
+              <p>Duration, 12:56</p>
+            </div>
+            <h4>Open page</h4>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features">
-        <div class="container">
-            <h2>We Offer The Best For You</h2>
-            <div class="features-grid">
-                <div class="feature">
-                    <img src="icon.png" alt="Icon">
-                    <h3>High Quality Audio</h3>
-                    <p>Description...</p>
-                </div>
-                <div class="feature">
-                    <img src="icon.png" alt="Icon">
-                    <h3>Multi-Platform</h3>
-                    <p>Description...</p>
-                </div>
-                <div class="feature">
-                    <img src="icon.png" alt="Icon">
-                    <h3>Interesting Content</h3>
-                    <p>Description...</p>
-                </div>
-                <div class="feature">
-                    <img src="icon.png" alt="Icon">
-                    <h3>A Lot of Podcasts</h3>
-                    <p>Description...</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- trending ends here  -->
 
-    <!-- Testimonials Section -->
+    <!-- explore starts from here -->
+    <section class="explore" id="explore">
+      <div class="explore-top">
+        <h1>Explore More Podcasts</h1>
+
+        <div class="explore-links">
+          <a href="#">All</a>
+          <a href="#">Music</a>
+          <a href="#">Technology</a>
+          <a href="#">Business</a>
+          <a href="#">Entertainment</a>
+        </div>
+      </div>
+
+      <div class="explore-all">
+        <div class="explore-left">
+          <div class="explores">
+            <img src="./Assets/Rectangle 4.png" alt="" class="e-image" />
+            <div class="explore-details">
+              <h3>The design principles</h3>
+              <p>Episode 1 . Season 2</p>
+              <div class="explore-inline">
+                <span>0.56</span>
+                <img src="./Assets/Volume icon.png" alt="" />
+                <span>-4.44</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="explores">
+            <img src="./Assets/Rectangle 4.png" alt="" class="e-image" />
+            <div class="explore-details">
+              <h3>The design principles</h3>
+              <p>Episode 1 . Season 2</p>
+              <div class="explore-inline">
+                <span>0.56</span>
+                <img src="./Assets/Volume icon.png" alt="" />
+                <span>-4.44</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="explores">
+            <img src="./Assets/Rectangle 4.png" alt="" class="e-image" />
+            <div class="explore-details">
+              <h3>The design principles</h3>
+              <p>Episode 1 . Season 2</p>
+              <div class="explore-inline">
+                <span>0.56</span>
+                <img src="./Assets/Volume icon.png" alt="" />
+                <span>-4.44</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="explore-right">
+          <div class="explores">
+            <img src="./Assets/Rectangle 4.png" alt="" class="e-image" />
+            <div class="explore-details">
+              <h3>The design principles</h3>
+              <p>Episode 1 . Season 2</p>
+              <div class="explore-inline">
+                <span>0.56</span>
+                <img src="./Assets/Volume icon.png" alt="" />
+                <span>-4.44</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="explores">
+            <img src="./Assets/Rectangle 4.png" alt="" class="e-image" />
+            <div class="explore-details">
+              <h3>The design principles</h3>
+              <p>Episode 1 . Season 2</p>
+              <div class="explore-inline">
+                <span>0.56</span>
+                <img src="./Assets/Volume icon.png" alt="" />
+                <span>-4.44</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="explores">
+            <img src="./Assets/Rectangle 4.png" alt="" class="e-image" />
+            <div class="explore-details">
+              <h3>The design principles</h3>
+              <p>Episode 1 . Season 2</p>
+              <div class="explore-inline">
+                <span>0.56</span>
+                <img src="./Assets/Volume icon.png" alt="" />
+                <span>-4.44</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- explore setion ends here  -->
+
+    <!-- offer section starts from here  -->
+    <section class="offer" id="offer">
+      <h1>We Offer The Best For You</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit interdum</p>
+
+      <div class="offer-details">
+        <div class="offer-detail">
+          <img src="./Assets/Frame (1).png" alt="" />
+          <h1>High Quality Audio</h1>
+          <p>Lorem ipsum dolor sit ametconsectetur adipiscing elit interdum</p>
+        </div>
+
+        <div class="offer-detail">
+          <img src="./Assets/Frame 7.png" alt="" />
+          <h1>Multi Platform</h1>
+          <p>Lorem ipsum dolor sit ametconsectetur adipiscing elit interdum</p>
+        </div>
+
+        <div class="offer-detail">
+          <img src="./Assets/Frame (2).png" alt="" />
+          <h1>Interesting Content</h1>
+          <p>Lorem ipsum dolor sit ametconsectetur adipiscing elit interdum</p>
+        </div>
+
+        <div class="offer-detail">
+          <img src="./Assets/Frame (3).png" alt="" />
+          <h1>A lot of Podcast</h1>
+          <p>Lorem ipsum dolor sit ametconsectetur adipiscing elit interdum</p>
+        </div>
+      </div>
+    </section>
+    <!-- offer section ends here  -->
+
+    <!-- testimonials start here  -->
     <section class="testimonials">
-        <div class="container">
-            <h2>Our Lovely Students Reviews</h2>
-            <div class="testimonial-slider">
-                <!-- Repeat this block for each testimonial -->
-                <div class="testimonial-card">
-                    <img src="reviewer.jpg" alt="Reviewer Image">
-                    <h3>Reviewer Name</h3>
-                    <p>Review content...</p>
-                    <p>Related podcast name and date</p>
-                </div>
+      <p>TESTIMONIALS</p>
+      <h1>Our Lovely Students Reviews</h1>
+
+      <div class="testimonials-cards">
+        <img src="./Assets/Group 10 (1).png" alt="" class="test-image" />
+        <div class="testimonials-card">
+          <h1>Amazing Information <span>Podcast</span> December 12</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing, elit nec mus nisl
+            primis, auctor mauris posuere cras scelerisque. Susenatis lobortis.
+          </p>
+
+          <div class="card-bottom">
+            <img src="./Assets/Ellipse 11.png" alt="" />
+            <div class="card-name">
+              <h3>Enam Biaty</h3>
+              <p>UI/UX Designer</p>
             </div>
+          </div>
         </div>
+
+        <div class="testimonials-card">
+          <h1>Amazing Information <span>Podcast</span> December 12</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing, elit nec mus nisl
+            primis, auctor mauris posuere cras scelerisque. Susenatis lobortis.
+          </p>
+
+          <div class="card-bottom">
+            <img src="./Assets/Ellipse 12.png" alt="" />
+            <div class="card-name">
+              <h3>Edem Thany</h3>
+              <p>Web Developer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials-card">
+          <h1>Amazing Information <span>Podcast</span> December 12</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing, elit nec mus nisl
+            primis, auctor mauris posuere cras scelerisque. Susenatis lobortis.
+          </p>
+
+          <div class="card-bottom">
+            <img src="./Assets/Ellipse 13.png" alt="" />
+            <div class="card-name">
+              <h3>Cassandra</h3>
+              <p>Digital Marketer</p>
+            </div>
+          </div>
+        </div>
+        <img src="./Assets/Group 101.png" alt="" class="test-image" />
+      </div>
+    </section>
+    <!-- testimonials ends here  -->
+
+    <!-- features starts from here  -->
+
+    <section class="features">
+      <h1>Powerful Features For Powerful Creators</h1>
+      <p class="choose">Choose plan that's right for you</p>
+      <div class="toogle">
+        <p class="pay">Pay monthly</p>
+        <input type="checkbox" id="check" />
+        <label for="check" class="toogle-button"></label>
+        <p class="pay">Pay yearly</p>
+      </div>
+
+      <div class="plans">
+        <div class="plan">
+          <h4>Freebie</h4>
+          <span>Lorem ipsum dolor sit amet consectetur adipiscing elits,</span>
+          <p>$0 <span>/Month</span></p>
+          <h5>Get Started Now</h5>
+          <div class="rate">
+            <img src="./Assets/Layer 2.png" alt="" />
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+
+          <div class="rate">
+            <img src="./Assets/Layer 2.png" alt="" />
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+
+          <div class="rate">
+            <img src="./Assets/Layer 3.png" alt="" />
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+
+          <div class="rate">
+            <img src="./Assets/Layer 3.png" alt="" />
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+
+        <div class="plan">
+          <h4>Professional</h4>
+          <span>Lorem ipsum dolor sit amet consectetur adipiscing elits,</span>
+          <p>$25 <span>/Month</span></p>
+          <h5>Get Started Now</h5>
+          <div class="rate">
+            <img src="./Assets/Layer 2.png" alt="" />
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+
+          <div class="rate">
+            <img src="./Assets/Layer 2.png" alt="" />
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+
+          <div class="rate">
+            <img src="./Assets/Layer 3.png" alt="" />
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+
+          <div class="rate">
+            <img src="./Assets/Layer 3.png" alt="" />
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+
+        <div class="plan">
+          <h4>Enterprise</h4>
+          <span>Lorem ipsum dolor sit amet consectetur adipiscing elits,</span>
+          <p>$100 <span>/Month</span></p>
+          <h5>Get Started Now</h5>
+          <div class="rate">
+            <img src="./Assets/Layer 2.png" alt="" />
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+
+          <div class="rate">
+            <img src="./Assets/Layer 2.png" alt="" />
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+
+          <div class="rate">
+            <img src="./Assets/Layer 3.png" alt="" />
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+
+          <div class="rate">
+            <img src="./Assets/Layer 3.png" alt="" />
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-bottom">
+        <div class="f-bottom-left">
+          <h3>Try it for free</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+
+          <div class="f-details">
+            <input type="email" placeholder="Your email" />
+            <button type="submit">Subscribe</button>
+          </div>
+        </div>
+
+        <div class="f-bottom-right">
+          <img
+            src="./Assets/young-african-american-woman-s-portrait-isolated-pink-background 1.png"
+            alt=""
+          />
+        </div>
+      </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section class="pricing">
-        <div class="container">
-            <h2>Powerful Features For Powerful Creators</h2>
-            <div class="pricing-toggle">
-                <button>Monthly</button>
-                <button>Yearly</button>
-            </div>
-            <div class="pricing-cards">
-                <div class="pricing-card">
-                    <h3>Freebie</h3>
-                    <p>$0/month</p>
-                    <p>Features...</p>
-                </div>
-                <div class="pricing-card">
-                    <h3>Professional</h3>
-                    <p>$25/month</p>
-                    <p>Features...</p>
-                </div>
-                <div class="pricing-card">
-                    <h3>Enterprise</h3>
-                    <p>$100/month</p>
-                    <p>Features...</p>
-                </div>
-            </div>
+    <!-- features ends here  -->
+
+    <!-- footer strts here  -->
+    <section class="footer">
+      <div class="footer-top">
+        <h1>Learn how to grow audience fast in Twitter</h1>
+        <p>Download Free Chapter</p>
+      </div>
+      <hr />
+
+      <div class="footer-middle">
+        <div class="footer-middle1">
+          <h1>About the Podcast</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit venenatis
+            tristique, semper primis proin turpis habitasse ridiculus lacinia
+            ligula, viverra sapien
+          </p>
         </div>
+
+        <div class="footer-middle2">
+          <div class="item">
+            <h1>Company</h1>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+
+        <div class="footer-middle2">
+          <div class="item">
+            <h1>Help</h1>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+
+        <div class="footer-middle2">
+          <div class="item">
+            <h1>Reference</h1>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-socials">
+        <a
+          href="https://www.linkedin.com/in/christopher-adzesi-4b508b231/"
+          target="_blank"
+          ><img src="./Assets/LinkedIn.png" alt=""
+        /></a>
+        <a href="https://web.facebook.com/christopher.adzesi" target="_blank"
+          ><img src="./Assets/Instagram.png" alt=""
+        /></a>
+        <a href="https://web.facebook.com/christopher.adzesi" target="_blank"
+          ><img src="./Assets/X.png" alt=""
+        /></a>
+        <a href="https://web.facebook.com/christopher.adzesi" target="_blank"
+          ><img src="./Assets/Facebook.png" alt=""
+        /></a>
+      </div>
     </section>
-
-    <!-- Newsletter Section -->
-    <section class="newsletter">
-        <div class="container">
-            <h2>Try it for free</h2>
-            <form>
-                <input type="email" placeholder="Your email">
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="container">
-            <div class="cta">
-                <p>Learn how to grow audience fast in Twitter</p>
-                <button>Download</button>
-            </div>
-            <div class="footer-columns">
-                <div class="footer-column">
-                    <h3>About the podcast</h3>
-                    <p>Description...</p>
-                </div>
-                <div class="footer-column">
-                    <h3>Company</h3>
-                    <ul>
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Help</h3>
-                    <ul>
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Reference</h3>
-                    <ul>
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="social-icons">
-                <a href="#">LinkedIn</a>
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
-            </div>
-        </div>
-    </footer>
-</body>
-
+    <!-- footer ends here  -->
+    <script src="./script.js"></script>
+  </body>
 </html>
