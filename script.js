@@ -11,21 +11,21 @@ var wavesurfer = WaveSurfer.create({
   barRadius: 2,
 });
 
-wavesurfer.load("Assets/Comot.mp3");
+wavesurfer.load("images/Comot.mp3");
 
 playBtn.onclick = function () {
   wavesurfer.playPause();
   if (playBtn.src.includes("play.png")) {
-    playBtn.src = "Assets/pauseR.png";
+    playBtn.src = "images/pauseR.png";
     musicDiv.style.backgroundColor = "#EA0505";
   } else {
-    playBtn.src = "Assets/play.png";
+    playBtn.src = "images/play.png";
     musicDiv.style.backgroundColor = "black";
   }
 };
 
 wavesurfer.on("finish", function () {
-  playBtn.src = "Assets/play.png";
+  playBtn.src = "images/play.png";
   musicDiv.style.backgroundColor = "black";
   wavesurfer.stop();
 });
